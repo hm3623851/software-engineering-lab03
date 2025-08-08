@@ -134,4 +134,37 @@ public class AccountBalanceCalculatorTest {
         assertTrue(historyAfterSecondCalc.containsAll(secondTransactions), "Transaction history should contain the second set of transactions");
         assertFalse(historyAfterSecondCalc.containsAll(firstTransactions), "Transaction history should not contain the first set of transactions after the second calculation");
     }
+
+    // NEW TESTS TO EXPOSE BUGS
+    @Test
+    void testNegativeAmountShouldThrowException() {
+        // This test will FAIL because Transaction allows negative amounts!
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Transaction(TransactionType.DEPOSIT, -100);
+        }, "Transaction should not allow negative amounts");
+    }
+
+    @Test
+    void testNullTransactionTypeShouldThrowException() {
+        // This test will FAIL because Transaction allows null type!
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Transaction(null, 100);
+        }, "Transaction should not allow null transaction type");
+    }
+
+    @Test
+    void testTransactionEquality() {
+        // This test will FAIL because Transaction doesn't override equals()!
+        Transaction t1 = new Transaction(TransactionType.DEPOSIT, 100);
+        Transaction t2 = new Transaction(TransactionType.DEPOSIT, 100);
+        assertEquals(t1, t2, "Two transactions with same type and amount should be equal");
+    }
+
+    @Test
+    void testNegativeWithdrawalShouldThrowException() {
+        // Test that negative withdrawal amounts are rejected
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Transaction(TransactionType.WITHDRAWAL, -50);
+        }, "Negative withdrawal amounts should be rejected");
+    }
 }
