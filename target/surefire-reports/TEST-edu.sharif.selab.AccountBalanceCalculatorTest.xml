@@ -1,74 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="edu.sharif.selab.AccountBalanceCalculatorTest" time="0.048" tests="13" errors="0" skipped="0" failures="0">
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="edu.sharif.selab.AccountBalanceCalculatorTest" time="0" errors="0" skipped="0">
   <properties>
-    <property name="java.specification.version" value="24"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/hossein/Desktop/software-engineer/tamrin/target/test-classes:/Users/hossein/Desktop/software-engineer/tamrin/target/classes:/Users/hossein/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/Users/hossein/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:/Users/hossein/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/hossein/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/Users/hossein/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/hossein/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:"/>
-    <property name="java.vm.vendor" value="Homebrew"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="java.vm.specification.version" value="24"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.15+6-Ubuntu-0ubuntu122.04"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/mahdi/Desktop/se03/software-engineering-lab03"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.country" value="IR"/>
-    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/24.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/hossein/Desktop/software-engineer/tamrin/target/surefire/surefirebooter-20250808172935840_3.jar /Users/hossein/Desktop/software-engineer/tamrin/target/surefire 2025-08-08T17-29-35_779-jvmRun1 surefire-20250808172935840_1tmp surefire_0-20250808172935840_2tmp"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/mahdi/Desktop/se03/software-engineering-lab03"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17.0.15+6-Ubuntu-0ubuntu122.04"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/tmp/.mount_cursorpbhER3/usr/lib/:/tmp/.mount_cursorpbhER3/usr/lib32/:/tmp/.mount_cursorpbhER3/usr/lib64/:/tmp/.mount_cursorpbhER3/lib/:/tmp/.mount_cursorpbhER3/lib/i386-linux-gnu/:/tmp/.mount_cursorpbhER3/lib/x86_64-linux-gnu/:/tmp/.mount_cursorpbhER3/lib/aarch64-linux-gnu/:/tmp/.mount_cursorpbhER3/lib32/:/tmp/.mount_cursorpbhER3/lib64/::/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/hossein/Desktop/software-engineer/tamrin/target/test-classes:/Users/hossein/Desktop/software-engineer/tamrin/target/classes:/Users/hossein/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/Users/hossein/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:/Users/hossein/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/hossein/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/Users/hossein/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/hossein/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:"/>
-    <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/Users/hossein"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.8.0-65-generic"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="user.home" value="/home/mahdi"/>
+    <property name="user.timezone" value="Asia/Tehran"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="mahdi"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2025-07-15"/>
-    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/24.0.2/libexec/openjdk.jdk/Contents/Home"/>
-    <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/hossein/Desktop/software-engineer/tamrin"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="line.separator" value="&#10;"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/hossein/Desktop/software-engineer/tamrin/target/surefire/surefirebooter-20250808172935840_3.jar"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.runtime.version" value="24.0.2"/>
-    <property name="user.name" value="hossein"/>
-    <property name="stdout.encoding" value="UTF-8"/>
-    <property name="path.separator" value=":"/>
-    <property name="os.version" value="15.6"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="Homebrew"/>
-    <property name="localRepository" value="/Users/hossein/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
-    <property name="java.io.tmpdir" value="/var/folders/mw/n8hg16_93v37k1_8tgymm4pm0000gn/T/"/>
-    <property name="java.version" value="24.0.2"/>
-    <property name="user.dir" value="/Users/hossein/Desktop/software-engineer/tamrin"/>
-    <property name="os.arch" value="aarch64"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="native.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/hossein/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="stderr.encoding" value="UTF-8"/>
-    <property name="java.vendor" value="Homebrew"/>
-    <property name="java.vm.version" value="24.0.2"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.class.version" value="68.0"/>
+    <property name="java.version" value="17.0.15"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-17"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase name="testTransactionHistoryShouldNotBeNull" classname="edu.sharif.selab.AccountBalanceCalculatorTest" time="0.018"/>
-  <testcase name="testZeroAmountTransaction" classname="edu.sharif.selab.AccountBalanceCalculatorTest" time="0.001"/>
-  <testcase name="testEmptyTransactionList" classname="edu.sharif.selab.AccountBalanceCalculatorTest" time="0.001"/>
-  <testcase name="testTransactionHistoryAfterDeposits" classname="edu.sharif.selab.AccountBalanceCalculatorTest" time="0.002"/>
-  <testcase name="testOnlyDeposits" classname="edu.sharif.selab.AccountBalanceCalculatorTest" time="0.001"/>
-  <testcase name="testTransactionHistoryAfterDepositsAndWithdrawals" classname="edu.sharif.selab.AccountBalanceCalculatorTest" time="0.0"/>
-  <testcase name="testTransactionHistoryShouldBeEmptyBeforeCalculatingBalance" classname="edu.sharif.selab.AccountBalanceCalculatorTest" time="0.001"/>
-  <testcase name="testTransactionHistoryShouldContainOnlyLastCalculationTransactions" classname="edu.sharif.selab.AccountBalanceCalculatorTest" time="0.001"/>
-  <testcase name="testMixedTransactions" classname="edu.sharif.selab.AccountBalanceCalculatorTest" time="0.0"/>
-  <testcase name="testNegativeWithdrawalShouldThrowException" classname="edu.sharif.selab.AccountBalanceCalculatorTest" time="0.002"/>
-  <testcase name="testTransactionEquality" classname="edu.sharif.selab.AccountBalanceCalculatorTest" time="0.0"/>
-  <testcase name="testNegativeAmountShouldThrowException" classname="edu.sharif.selab.AccountBalanceCalculatorTest" time="0.001"/>
-  <testcase name="testNullTransactionTypeShouldThrowException" classname="edu.sharif.selab.AccountBalanceCalculatorTest" time="0.001"/>
+  <testcase classname="edu.sharif.selab.AccountBalanceCalculatorTest" name="edu.sharif.selab.AccountBalanceCalculatorTest.testEmptyTransactionList" time="0"/>
 </testsuite>
